@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "epistemo"
+version = "0.1.0"
+description = "A RAG system with an experimental document embedder app and reusable components."
+authors = ["Vojin Radosavljevic <vojinr@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "embedder", from = "apps" },
+    { include = "utils", from = "libs" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+chromadb = "^1.0.0"
+sentence-transformers = "^4.0.2"
+openai = "^1.0"         # or sentence-transformers / huggingface
+faiss-cpu = "^1.7"      # example vector DB (or chromadb, qdrant, pinecone-client)
+python-dotenv = "^1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+black = "^24.0"
+mypy = "^1.0"
+isort = "^5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
