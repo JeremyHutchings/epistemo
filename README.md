@@ -18,3 +18,41 @@ Rather than relying on traditional, decaying documentation, Epistemo continuousl
 
 ## Status
 This is an early-stage prototype and research project.
+
+
+## Using Poetry
+
+To manage dependencies and run your project, you can use the Poetry package manager. Below are the steps to get started:
+
+### Installation
+
+First, install Poetry by following the instructions on the [official Poetry website](https://python-poetry.org/docs/#installation).
+
+### Setting Up the Project
+
+Once Poetry is installed, navigate to the project directory and install the dependencies:
+
+```sh
+poetry install
+```
+
+### Running the Project
+To run the Embedder, you can use the following command:
+
+```sh
+poetry run python src/embedder/main.py
+```
+
+### Adding Dependencies
+If you need to add new dependencies, you can do so using the following command:
+
+```sh
+poetry add <package-name>
+```
+
+For development dependencies, use:
+
+```sh
+poetry add --dev <package-name>
+```
+

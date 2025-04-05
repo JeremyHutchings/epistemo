@@ -1,0 +1,61 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Poetry & Python environment
+.env
+.venv/
+venv/
+poetry.lock
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Test coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.pytest_cache/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Embedded vector stores or DBs
+vector_dbs/chroma/
+vector_dbs/faiss_index/
+vector_dbs/qdrant.db/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Packages
+*.egg
+*.whl
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
